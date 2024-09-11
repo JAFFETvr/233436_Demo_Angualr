@@ -1,0 +1,59 @@
+#form {
+    margin: 20px auto; 
+    text-align: center;
+    border: 1px solid #000000; 
+    width: 50%; 
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #949494; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    padding: 12px 24px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    margin: 30px 5px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  button:hover {
+    background-color: #b3a17b; 
+    transform: translateY(-3px); 
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  label {
+    display: block; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 14px;
+    color: #080808; 
+    margin-bottom: 8px;
+    letter-spacing: 0.5px; 
+    transition: color 0.3s ease; 
+  }
+  input {
+    width: 50%;
+    height: 20px;
+  }
+  #USUARIO{
+  font-size: 25px;
+  margin: 20px ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
