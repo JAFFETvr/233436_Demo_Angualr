@@ -1,12 +1,32 @@
-<div id="table_users">
-    <table border="1px black">
-        <tr id="table_headers">
+
+<header>{{message}}
+    <p>UNIVERSIDAD POLITECNICA DE CHIAPAS </p>
+</header>
+
+<div id="table_container">
+    <table id="table_users">
+        <tr id="table_headers">            
             <th>ID</th>
-            <th>Name</th>
+            <th>NAME</th>
             <th>USERNAME</th>
-            <th>Phone</th>
+            <th>PHONE</th>
             <th>WEBSITE</th>
+            <th>Acciones</th> 
         </tr>
-        <tr></tr>
+        <tr *ngFor="let user of users_list">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+            <td><button (click)="seleccionar_usuario(user)">Seleccionar</button></td>
+        </tr>
     </table>
 </div>
+
+
+<br>
+
+<h2>FORMULARIO DE USUARIOS</h2>
+
+<app-user-form [user]="selected_user" (addUserEvent)="eventoRecibido($event)"></app-user-form>

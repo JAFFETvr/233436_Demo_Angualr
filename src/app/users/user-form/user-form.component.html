@@ -1,3 +1,13 @@
-<div id="form ">
-    <input  type="text " value="" id="user_name" name="user_name">
+<div id="form">
+    <label for="" id="USUARIO"> Agrega el usuario </label>
+    <label for="user_name">Nombre</label>
+    <input type="text" [(ngModel)]="user.name" id="user_name" name="user_name"><br>
+    <label for="username">Username</label>
+    <input type="text" [(ngModel)]="user.username" id="username" name="username"><br>
+    <label for="user_phone">Phone</label>
+    <input type="text" [(ngModel)]="user.phone" id="user_phone" name="user_phone"><br>
+    <label for="user_website">Website</label>
+    <input type="text" [(ngModel)]="user.website" id="user_website" name="user_website"><br>
+    <button (click)="mostrar()">Mostrar</button>
+    <button (click)="enviar()">Agregar</button>
 </div>

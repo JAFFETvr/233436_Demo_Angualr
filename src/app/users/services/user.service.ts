@@ -12,5 +12,7 @@ export class UserService {
 
   constructor(private _http: HttpClient) {  }
 
-  
+  getAll(): Observable<IUser[]>{
+    return this._http.get<IUser[]>(this.url_base)
+  }
 }
